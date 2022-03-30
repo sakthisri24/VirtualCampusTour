@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Changing the Image</h1>
+    <iframe href="https://momento360.com/e/u/15e4bf372dc04842ab53a811d0d45631?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium" id="myImage" width=100% height="350"></iframe>
+    <input type="button" onclick="changeImage()" value="Change" />
+    <p>Click on the "Change" button to convert waterbottle<br />
+        into Softdrink bottle</p>
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.href.match("https://momento360.com/e/u/7526c6bf74274d89bfecb0226369af10?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium")) {
+                image.href = "https://momento360.com/e/u/15e4bf372dc04842ab53a811d0d45631?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium";
+            }
+            else {
+                image.href = "https://momento360.com/e/u/7526c6bf74274d89bfecb0226369af10?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium";
+            }
+        }
+    </script>
+</body>
+</html>
