@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .php-bot .eye {
+            width: 52px;
+            height: 52px;
+            background-color: #444;
+            display: block;
+            margin: 47px auto 0px auto;
+            border-radius: 50%;
+            border: 46px solid #fff;
+            position: relative;
+        }
+        .php-bot .mouth {
+            width: 100px;
+            height: 50px;
+            background-color: #444;
+            display: block;
+            margin: 25px auto 0px auto;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            overflow: hidden;
+        }
+        /* PSEUDO ELEMENT */
+        .php-bot .mouth:before {
+            content: '';
+            width: 60px;
+            height: 60px;
+            background-color: #ff7c7c;
+            display: block;
+            border-radius: 50%;
+            margin: 30px auto 0px auto;
+        }
+        .php-bot .hat {
+            width: 60px;
+            height: 18px;
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            margin-left: -30px;
+            background-color: #b3b3b3;
+        }
+        .php-bot .hat:before {
+            content: '';
+            height: 46px;
+            width: 60px;
+            background-color: #444;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+            position: absolute;
+            top: -46px;
+        }
+        .php-bot .hat:after {
+            content: '';
+            border-bottom: 5px solid #444;
+            border-right: 3px solid #444;
+            border-left: 3px solid #444;
+            width: 92px;
+            height: 10px;
+            display: block;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            left: -19px;
+            bottom: -5px;
+            position: absolute;
+        }
+        .php-bot:before {
+            content: '';
+            width: 200px;
+            height: 30px;
+            background-color: #e1e1e1;
+            position: absolute;
+            border-radius: 50%;
+            top: 95%;
+            left: 50%;
+            margin-left: -100px;
+        }
+        .php-bot {
+ animation-name: jump;
+ animation-duration: 2s;
+ animation-iteration-count: infinite;
+}
+@keyframes jump {
+ 0%, 20% {
+ margin: -150px 0px 0px -150px;
+ height: 300px;
+ width: 300px;
+}
+ 40%, 70% {
+ margin: -100px 0px 0px -175px;
+ height: 250px;
+ width: 350px;
+}
+ 60% {
+ margin: -300px 0px 0px -125px;
+ height: 350px;
+ width: 250px;
+}
+ 80% {
+ margin: -50px 0px 0px -200px;
+ height: 200px;
+ width: 400px;
+}
+ 100% {
+ margin: -150px 0px 0px -150px;
+ height: 300px;
+ width: 300px;
+}
+}
+
+    </style>
+</head>
+<body>
+    <div class=”php-bot”>
+        <span class="hat"></span>
+        <span class=”eye”></span>
+        <span class=”mouth”></span>
+    </div>
+</body>
+</html>

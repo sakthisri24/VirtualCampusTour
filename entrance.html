@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .voice{
+             text-align: left;}
+        body{
+            background-color: black;
+        }
+        .ani{
+            position:absolute;
+            margin-left:50px;
+            margin-top:400px;
+            z-index:2;
+        }
+        .topnav{
+            position:relative;
+            z-index: 1;
+                color: black;
+                background-color: rgb(119, 42, 18);
+                padding: 1px;
+                padding-left: 550px;
+                
+        }
+        #btn{
+            background: transparent;
+            border: transparent;
+            cursor:pointer;
+        }
+        .img-box{
+            
+            position:absolute;
+            z-index:1;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pannellum/2.5.6/pannellum.js"></script>
+    <div class="topnav">
+        
+        <h3 style="color: blanchedalmond;  font-style: times new roman;font-size: 30px;"> 360° view of the college main entrance</h3>
+        <a href="content.html">
+            <button style="margin-left: 700px;"><img style="height:30px; width: 30px;"  src="home2.png"></button>
+        </a>
+    </div>
+    <div >
+         
+    </div>
+    
+    <script src="voiceMain.js"> </script>
+    <div class="ani">
+        <button id="btn" onclick="audio.play();"><img src ="girl-unscreen.gif" width="150px" height="150px" ></button>      
+        <script type="text/javascript">
+            const audio = new Audio();
+            audio.src="entranceAudio.mpeg";
+        </script>    
+    </div>
+    <script language="javascript">
+        function changeImage() {
+   
+    if (document.getElementById("imgClickAndChange").src == "https://momento360.com/e/u/7526c6bf74274d89bfecb0226369af10?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium") 
+   {
+       document.getElementById("imgClickAndChange").src = "https://momento360.com/e/u/caae0573c1934b0984e45a723b64c5be?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium";
+   
+}
+}function changeImage1() {
+   
+   if (document.getElementById("imgClickAndChange").src == "https://momento360.com/e/u/caae0573c1934b0984e45a723b64c5be?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium") 
+  {
+      document.getElementById("imgClickAndChange").src = "https://momento360.com/e/u/7526c6bf74274d89bfecb0226369af10?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium";
+  
+}
+}
+    </script>
+    <p> <iframe  src="https://momento360.com/e/u/7526c6bf74274d89bfecb0226369af10?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium" style="margin-left: 70px;width:90%; height:550px;" frameborder="0" id = "imgClickAndChange"></iframe></p> 
+    <button style="margin-left: 50px;" onclick=changeImage1()>MAIN ENTRANCE</button>
+    <button style="margin-left: 20px;" onclick=changeImage()>MOVE FORWARD</button>
+
+</body>
+</html>

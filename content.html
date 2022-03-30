@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Campus Tour</title>
+<style>
+body{
+min-height: 100%;
+background-color: black;
+}
+ 
+.topnav{
+            color: black;
+            background-color: rgb(245, 124, 10);
+            padding: 5px;
+            padding-left: 550px;
+           }
+h3{
+    font-size: 200%;         
+}
+h4{
+    background-color: darkslategray;
+    position: absolute;
+    z-index: 2;
+    margin-top: 300px;
+    margin-left: 580px;
+}
+
+#image{
+    position: absolute;
+    z-index: 1;
+}
+</style>
+</head>
+<body  >
+
+<div class="topnav">
+    <h2 style="font-size: 30px;"> KCG CAMPUS MAP</h2>
+    <div >
+        <a href="index.html">
+            <button style="margin-left: 700px;">HOME</button>
+        </a>
+    </div>
+    
+</div>
+<div >
+    <button style="position: relative;  margin-left: 1140px;top: 80px;" id="start">SPEAK</button>    
+    
+    <marquee style="position:relative; top:60px;margin-right: 190px;margin-left: 135px; color: aliceblue;" behavior="scroll" direction="left">Try speaking : Entrance ,Reception ,Classroom ,Library, Corridor ,Gallery ,Open air theatre.</marquee>
+</div>
+<script src="voiceMain.js"> </script>
+<figure style="text-align: center;margin-top: 50px;" > KCG Exterior Blocks</figure>
+<div style="position: absolute;z-index: 2; margin-top: 260px;
+margin-left: 615px;">
+    <a href="corridor.html">
+        <button  style="background-color:lightgreen;border-radius: 10px; font-weight: bold"><b>CORRIDOR</b></button>
+    </a>
+</div>
+<div style="position: absolute;z-index: 2; margin-top: 150px;
+margin-left: 750px;">
+    <a href="class1.html">
+        <button  style="background-color: lightgreen;border-radius: 10px;font-weight: bold">CLASSROOM</button>
+    </a>
+</div>
+<div style="position: absolute;z-index: 2; margin-top: 470px;
+margin-left: 220px; ">
+    <a href="ground.html">
+        <button style="background-color: lightgreen;border-radius: 10px;font-weight: bold">OPEN AIR THEATRE</button>
+    </a>
+</div>
+<div style="position: absolute;z-index: 2; margin-top: 430px;
+margin-left: 610px;">
+    <a href="reception.html">
+        <button style="background-color: lightgreen;border-radius: 10px;font-weight: bold">RECEPTION</button>
+    </a>
+</div>
+<div style="position: absolute;z-index: 2; margin-top: 550px;
+margin-left: 610px;">
+    <a href="entrance.html">
+        <button  style="background-color: lightgreen;border-radius: 10px;font-weight:bold;">ENTRANCE</button>
+    </a>
+</div>
+<div style="position: absolute;z-index: 2; margin-top: 170px;
+margin-left: 920px;">
+    <a href="gallery.html">
+        <button  style="background-color: lightgreen;border-radius: 10px;font-weight:bold;">GALLERY</button>
+    </a>
+</div>
+
+</div>
+<div style="position: absolute;z-index: 2; margin-top: 350px;
+margin-left: 770px; ">
+    <a href="library.html">
+        <button style="background-color: lightgreen;border-radius: 10px;font-weight: bold">LIBRARY</button>
+    </a>
+</div>
+
+<div id="image" ><Img style="margin-left: 125px;"  src="map.png" ></div>
+
+
+
+</body>
+</html>
